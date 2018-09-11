@@ -35,4 +35,8 @@ class FiguresController < ApplicationController
     redirect to "figures/#{@figure.id}"
   end
 
+  get '/figures' do
+    @figures = Figure.all
+  end
+
 end
