@@ -4,7 +4,7 @@
 </br>
   <label>Figure landmark</label>
   <% Landmark.all.each do |landmark| %>
-    <input type="checkbox" name="figure[title_ids][]" id="title_<%=title.id%>" value="<%=title.id%>"><%=title.name%></input></br>
+    <input type="checkbox" name="figure[landmark_ids][]" id="title_<%=title.id%>" value="<%=title.id%>"><%=title.name%></input></br>
   <% end %>
 
   <input type="text" name="figure[landmark_ids][]"></input>
